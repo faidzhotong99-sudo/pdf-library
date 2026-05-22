@@ -1,1 +1,18 @@
-
+{
+    "pdfs": [
+        {
+            "id": 1,
+            "title": "IQ Letter",
+            "filename": "IQ-letter.pdf",
+            "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/IQ-letter.pdf",
+            "description": "Official IQ test results",
+            "date": "2026-05-22"
+        },
+        {
+            "id": 2,
+            "title": "Certificate of Appreciation",
+            "filename": "Certificate.pdf",
+            "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Green%20and%20Gold%20Modern%20Certificate%20of%20Appreciation.pdf",
+            "description": "Award certificate",
+            "date": "2026-05-22"
+        }
