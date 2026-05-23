@@ -1,18 +1,28 @@
 {
-    "pdfs": [
-        {
-            "id": 1,
-            "title": "BILL NO. 4 MP Baintan Ampatuan strengthening Volunteerism",
-            "filename": "BILL NO. 4 MP Baintan Ampatuan strengthening Volunteerism.pdf",
-            "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/blob/main/BILL%20NO.%204%20MP%20Baintan%20Ampatuan%20strengthening%20Volunteerism.pdf",
-            "description": "Bill No. 4",
-            "date": "2026-05-23"
-        },
-        {
-            "id": 2,
-            "title": "Certificate of Appreciation",
-            "filename": "Certificate.pdf",
-            "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Green%20and%20Gold%20Modern%20Certificate%20of%20Appreciation.pdf",
-            "description": "Award certificate",
-            "date": "2026-05-22"
-        }
+  "pdfs": [
+    {
+      "id": 1,
+      "title": "Bill No. 1",
+      "filename": "Bill No. 1.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%201.pdf",
+      "description": "Bill No. 1 - Legislative document",
+      "date": "2026-05-22"
+    },
+    {
+      "id": 2,
+      "title": "Bill No. 2",
+      "filename": "Bill-No. 2.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.%202.pdf",
+      "description": "Constituting the Bangsamoro Parliament's Council BPC",
+      "date": "2026-05-22"
+    },
+    {
+      "id": 3,
+      "title": "BILL No. 3",
+      "filename": "BILL No. 3.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20No.%203.pdf",
+      "description": "Bill No. 3 - Legislative document",
+      "date": "2026-05-22"
+    }
+  ]
+}
