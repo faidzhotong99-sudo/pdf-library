@@ -1,84 +1,60 @@
 {
-  "pdfs": [
+  "name": "BParliament Handy Bills Library",
+  "short_name": "Handy Bills",
+  "description": "Approved Bangsamoro Parliament Bill Library - Official PDF Repository",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1a5f1a",
+  "background_color": "#0d3b0d",
+  "orientation": "portrait",
+  "icons": [
     {
-      "id": 1,
-      "title": "Bill No. 1",
-      "filename": "Bill No. 1.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%201.pdf",
-      "description": "Bill No. 1 - Legislative document",
-      "date": "2026-05-22"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 2,
-      "title": "Bill No. 2",
-      "filename": "Bill-No. 2.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.%202.pdf",
-      "description": "Constituting the Bangsamoro Parliament's Council BPC",
-      "date": "2026-05-22"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 3,
-      "title": "BILL No. 3",
-      "filename": "BILL No. 3.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20No.%203.pdf",
-      "description": "Bill No. 3 - Legislative document",
-      "date": "2026-05-22"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 4,
-      "title": "BILL NO. 4 MP Baintan Ampatuan strengthening Volunteerism",
-      "filename": "BILL NO. 4 MP Baintan Ampatuan strengthening Volunteerism.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20NO.%204%20MP%20Baintan%20Ampatuan%20strengthening%20Volunteerism.pdf",
-      "description": "Bill No. 4 - Legislative document",
-      "date": "2026-05-23"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 5,
-      "title": "Bill No. 5 -MP-Baintan-Ampatuan-CREATING-A-SUB-DISTRICT-ENGINEERING-OFFICE-FOR-THE-SPECIAL-GEOGRAPHIC-AREA-SGA-1",
-      "filename": "Bill No. 5 -MP-Baintan-Ampatuan-CREATING-A-SUB-DISTRICT-ENGINEERING-OFFICE-FOR-THE-SPECIAL-GEOGRAPHIC-AREA-SGA-1.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%205%20-MP-Baintan-Ampatuan-CREATING-A-SUB-DISTRICT-ENGINEERING-OFFICE-FOR-THE-SPECIAL-GEOGRAPHIC-AREA-SGA-1.pdf",
-      "description": "Bill No. 5 - Legislative document",
-      "date": "2026-05-23"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 6,
-      "title": "Bill-No.-06-MP-Baintan-Ampatuan-CONSTITUTING-THE-PARLIAMENTARY-DISTRICTS-OF-THE-BANGSAMORO-AUTONOMOUS-REGION-1",
-      "filename": "Bill-No.-06-MP-Baintan-Ampatuan-CONSTITUTING-THE-PARLIAMENTARY-DISTRICTS-OF-THE-BANGSAMORO-AUTONOMOUS-REGION-1.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.-06-MP-Baintan-Ampatuan-CONSTITUTING-THE-PARLIAMENTARY-DISTRICTS-OF-THE-BANGSAMORO-AUTONOMOUS-REGION-1.pdf",
-      "description": "Bill No. 6",
-      "date": "2026-05-23"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 7,
-      "title": "Bill No 7 MP Engr. Baintan Ampatuan - An Act Strenthening Disaster Risk Reduction and Management in BARMM",
-      "filename": "Bill No 7 MP Engr. Baintan Ampatuan - An Act Strenthening Disaster Risk Reduction and Management in BARMM.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No%207%20MP%20Engr.%20Baintan%20Ampatuan%20-%20An%20Act%20Strenthening%20Disaster%20Risk%20Reduction%20and%20Management%20in%20BARMM.pdf",
-      "description": "Bill No. 7",
-      "date": "2026-05-23"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "id": 8,
-      "title": "Bill No. 8 MP-Baintan-Ampatuan- An Act creating the Bangsamoro Irrigation Coordination Office",
-      "filename": "Bill No. 8 MP-Baintan-Ampatuan- An Act creating the Bangsamoro Irrigation Coordination Office.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%208%20MP-Baintan-Ampatuan-%20An%20Act%20creating%20the%20Bangsamoro%20Irrigation%20Coordination%20Office.pdf",
-      "description": "Bill No. 8",
-      "date": "2026-05-23"
-    },
-    {
-      "id": 9,
-      "title": "Bill-No. 09 -MP-Baintan-Ampatuan-CREATING-THE-HASHIM-SALAMAT-MUNICIPALITY-UNDER-THE-MAGUINDANAO-PROVINCE-1",
-      "filename": "Bill-No. 09 -MP-Baintan-Ampatuan-CREATING-THE-HASHIM-SALAMAT-MUNICIPALITY-UNDER-THE-MAGUINDANAO-PROVINCE-1.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.%2009%20-MP-Baintan-Ampatuan-CREATING-THE-HASHIM-SALAMAT-MUNICIPALITY-UNDER-THE-MAGUINDANAO-PROVINCE-1.pdf",
-      "description": "Bill No. 9",
-      "date": "2026-05-23"
-    },
-    {
-      "id": 10,
-      "title": "Bill-No. 10 -MP-Baintan-Ampatuan-REQUIRING-MUSLIM-RESTAURANTS-AND-FOOD-ESTABLISHMENTS-WITHIN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO-BARMM",
-      "filename": "Bill-No. 10 -MP-Baintan-Ampatuan-REQUIRING-MUSLIM-RESTAURANTS-AND-FOOD-ESTABLISHMENTS-WITHIN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO-BARMM.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.%2010%20-MP-Baintan-Ampatuan-REQUIRING-MUSLIM-RESTAURANTS-AND-FOOD-ESTABLISHMENTS-WITHIN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO-BARMM.pdf",
-      "description": "Bill No. 10",
-      "date": "2026-05-23"
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
