@@ -1,0 +1,1456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Approved Bangsamoro Parliament Bill Library | Official PDF Repository</title>
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="BTA Library">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1a5f1a">
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png">
+    
+    <!-- PDF.js - The most reliable PDF viewer -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <!-- Google Fonts - Formal & Elegant -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome 6 (Free Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #1a5f1a 0%, #0d3b0d 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            flex: 1;
+        }
+        
+        /* BISMILLAH LOADING ANIMATION OVERLAY - Clean & Concise */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+        }
+        .loading-overlay.hide {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .bismillah-container {
+            text-align: center;
+            padding: 40px;
+            background: transparent;
+            max-width: 400px;
+            width: 90%;
+        }
+        .bismillah-text {
+            font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: #1a5f1a;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        .loading-bar-container {
+            width: 100%;
+            height: 24px;
+            background: #e8e8e8;
+            border-radius: 30px;
+            overflow: hidden;
+            margin: 0 auto;
+            box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .loading-bar-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #2d8c2d, #4caf4c);
+            border-radius: 30px;
+            animation: fillBar 3s ease-out forwards;
+            box-shadow: 0 0 8px rgba(45,140,45,0.5);
+        }
+        @keyframes fillBar {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+        .loading-percent {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #2d8c2d;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        
+        /* PWA Install Button */
+        .install-banner {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a5f1a;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            display: none;
+            align-items: center;
+            gap: 12px;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            cursor: pointer;
+            font-weight: 600;
+            border: 1px solid #ffd700;
+        }
+        .install-banner.show {
+            display: flex;
+        }
+        .install-banner i {
+            font-size: 20px;
+        }
+        .install-banner:hover {
+            background: #2d8c2d;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2d8c2d 0%, #1a5f1a 100%);
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 1px solid #c41e3a;
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: "\f0e5";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 120px;
+            opacity: 0.08;
+            right: -20px;
+            bottom: -30px;
+            pointer-events: none;
+        }
+        .header::after {
+            content: "\f15c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            font-size: 100px;
+            opacity: 0.08;
+            left: -20px;
+            top: -20px;
+            pointer-events: none;
+        }
+        
+        .header-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        .bta-logo-icon {
+            background: transparent;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        .bta-logo-icon:hover {
+            transform: scale(1.05);
+        }
+        .bta-logo-icon img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ffd700;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .header-title {
+            font-family: 'Cormorant Garamond', 'Times New Roman', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .header-subtitle {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffd700;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .search-card {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-top: 4px solid #c41e3a;
+        }
+        .search-box {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #2d8c2d;
+            border-radius: 12px;
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .search-box:focus { outline: none; border-color: #c41e3a; }
+        .search-button {
+            width: 100%;
+            background: linear-gradient(135deg, #2d8c2d 0%, #1a5f1a 100%);
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .search-button i {
+            margin-right: 8px;
+        }
+        .search-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .update-button {
+            width: 100%;
+            background: #c41e3a;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-family: 'Montserrat', sans-serif;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .update-button i {
+            margin-right: 6px;
+        }
+        .update-button:hover { background: #a01830; transform: translateY(-2px); }
+        
+        .bta-link-container {
+            text-align: center;
+            margin: 15px 0 10px;
+            padding: 8px;
+            background: #f0f8f0;
+            border-radius: 10px;
+            border: 1px solid #2d8c2d;
+        }
+        .bta-link {
+            color: #1a5f1a;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .bta-link i {
+            font-size: 14px;
+        }
+        .bta-link:hover {
+            text-decoration: underline;
+            color: #c41e3a;
+        }
+        
+        .results-count {
+            font-size: 13px;
+            color: #2d8c2d;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-weight: 500;
+        }
+        .results-count i {
+            margin-right: 5px;
+        }
+        .main-content-area { display: flex; flex-direction: column; gap: 12px; }
+        .pdf-list { display: flex; flex-direction: column; gap: 12px; }
+        .pdf-card {
+            background: white;
+            border-radius: 15px;
+            padding: 18px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-left: 4px solid #c41e3a;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+        .pdf-card:hover { 
+            transform: translateX(5px); 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left-color: #2d8c2d;
+        }
+        
+        /* Timeline/Event Card Styles - Made Clickable */
+        .event-card {
+            background: white;
+            border-radius: 15px;
+            padding: 18px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-left: 4px solid #ffd700;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 12px;
+        }
+        .event-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border-left-color: #c41e3a;
+            background: #fef9e6;
+        }
+        .event-title {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1a5f1a;
+            margin-bottom: 8px;
+        }
+        .event-meta {
+            font-size: 12px;
+            color: #c41e3a;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .event-desc {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .timeline-placeholder {
+            text-align: center;
+            padding: 40px;
+            background: white;
+            border-radius: 15px;
+            color: #666;
+        }
+        
+        /* News/Event Detail Modal */
+        .news-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 1100;
+            flex-direction: column;
+        }
+        .news-modal.active { display: flex; }
+        .news-modal-header {
+            background: #1a5f1a;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .news-modal-title {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Arial', sans-serif;
+            flex: 1;
+        }
+        .news-modal-body {
+            flex: 1;
+            overflow-y: auto;
+            padding: 25px;
+            background: white;
+        }
+        .news-date {
+            color: #c41e3a;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .news-full-content {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .news-link-btn {
+            display: inline-block;
+            background: #2d8c2d;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .news-link-btn:hover { background: #1a5f1a; }
+        .close-news-btn {
+            background: #c41e3a;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .pdf-title { 
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            font-size: 16px; 
+            font-weight: 700;
+            color: #1a5f1a; 
+            margin-bottom: 8px;
+            letter-spacing: 0.2px;
+            line-height: 1.4;
+            word-wrap: break-word;
+            word-break: break-word;
+            white-space: normal;
+            overflow-wrap: break-word;
+        }
+        
+        .pdf-meta { 
+            font-size: 12px; 
+            color: #999; 
+            margin-bottom: 8px; 
+            font-family: 'Montserrat', sans-serif;
+        }
+        .pdf-meta i {
+            margin-right: 5px;
+            color: #c41e3a;
+        }
+        .pdf-desc { 
+            font-size: 13px; 
+            color: #666; 
+            line-height: 1.4; 
+            font-family: 'Montserrat', sans-serif;
+            word-wrap: break-word;
+            word-break: break-word;
+        }
+        .highlight { background-color: #ffeb3b; font-weight: bold; padding: 0 2px; border-radius: 3px; }
+        
+        /* PDF Viewer Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            z-index: 1000;
+            flex-direction: column;
+        }
+        .modal.active { display: flex; }
+        .modal-header {
+            background: rgba(0,0,0,0.85);
+            padding: 12px 20px;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            z-index: 10;
+        }
+        .modal-title { 
+            color: white; 
+            font-size: 14px;
+            font-weight: 500;
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            word-break: break-word;
+            line-height: 1.3;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .bottom-controls {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            z-index: 20;
+        }
+        
+        .nav-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .nav-controls button {
+            background: #444;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .nav-controls button i {
+            margin-right: 5px;
+        }
+        .nav-controls button:hover { background: #2d8c2d; transform: translateY(-1px); }
+        .page-info {
+            color: white;
+            padding: 6px 14px;
+            font-size: 13px;
+            font-family: 'Montserrat', sans-serif;
+            background: #555;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .action-buttons button {
+            background: #c41e3a;
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+            font-family: 'Montserrat', sans-serif;
+            transition: all 0.2s;
+            white-space: nowrap;
+        }
+        .action-buttons button:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+        .action-buttons .download-btn { background: #2d8c2d; }
+        .action-buttons .toggle-controls-btn { background: #c41e3a; }
+        .action-buttons .close-btn { background: #555; }
+        .action-buttons button i {
+            margin-right: 6px;
+        }
+        
+        .extra-controls-panel {
+            background: rgba(30,30,30,0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            position: fixed;
+            bottom: 60px;
+            left: 0;
+            right: 0;
+            z-index: 15;
+        }
+        .extra-controls-panel.show {
+            max-height: 80px;
+            transition: max-height 0.3s ease-in;
+        }
+        .extra-controls {
+            padding: 12px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .extra-controls button {
+            background: #444;
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px;
+            transition: all 0.2s;
+        }
+        .extra-controls button i {
+            margin-right: 5px;
+        }
+        .extra-controls button:hover { background: #2d8c2d; transform: translateY(-1px); }
+        .zoom-percent {
+            background: #2d8c2d;
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 12px;
+            min-width: 65px;
+        }
+        
+        .pdf-canvas-container {
+            flex: 1;
+            overflow-y: auto;
+            background: #525659;
+            padding: 20px;
+            padding-bottom: 80px;
+            text-align: center;
+        }
+        .pdf-canvas-container canvas {
+            margin: 0 auto;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+            background: white;
+        }
+        
+        .pdf-loading {
+            color: white;
+            text-align: center;
+            padding: 50px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .pdf-loading i {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .empty-state { text-align: center; padding: 50px; color: #999; background: white; border-radius: 15px; }
+        .empty-state h3 { margin-bottom: 8px; color: #1a5f1a; font-family: 'Montserrat', sans-serif; }
+        .empty-state i { font-size: 48px; margin-bottom: 15px; color: #c41e3a; }
+        .loading { text-align: center; padding: 40px; color: white; font-family: 'Montserrat', sans-serif; }
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top-color: #ffd700;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        #updateStatus { font-size: 11px; color: #ffd700; text-align: center; margin-top: 8px; font-family: 'Montserrat', sans-serif; }
+        
+        @media (max-width: 700px) {
+            .bottom-controls {
+                flex-direction: column;
+                padding: 10px;
+                gap: 10px;
+            }
+            .nav-controls { justify-content: center; width: 100%; }
+            .action-buttons { justify-content: center; width: 100%; }
+            .extra-controls-panel.show { max-height: 120px; }
+            .extra-controls { flex-wrap: wrap; }
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 12px; }
+            .pdf-title { font-size: 14px; }
+            .header-title { font-size: 22px; }
+            .modal-title { font-size: 11px; }
+            .bta-link { font-size: 11px; }
+            .bta-logo-icon img {
+                width: 55px;
+                height: 55px;
+            }
+            .header-subtitle {
+                font-size: 10px;
+                letter-spacing: 1px;
+            }
+            .nav-controls button { padding: 5px 10px; font-size: 11px; }
+            .action-buttons button { padding: 6px 12px; font-size: 11px; }
+            .page-info { font-size: 11px; padding: 4px 10px; }
+            .bismillah-text { font-size: 32px; }
+            .loading-bar-container { height: 18px; }
+            .news-modal-title { font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- PWA Install Banner -->
+    <div id="installBanner" class="install-banner" onclick="installPWA()">
+        <i class="fas fa-download"></i>
+        <span>Install App - No Ads, No Banner!</span>
+        <i class="fas fa-arrow-right"></i>
+    </div>
+
+    <!-- BISMILLAH LOADING ANIMATION OVERLAY -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="bismillah-container">
+            <div class="bismillah-text">Bismillah</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar-fill"></div>
+            </div>
+            <div class="loading-percent" id="loadingPercent">0%</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="header-logo">
+                <div class="bta-logo-icon">
+                    <img src="https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png" alt="BTA Parliament Seal">
+                </div>
+            </div>
+            
+            <div class="header-title">
+                APPROVED BANGSAMORO PARLIAMENT BILL LIBRARY
+            </div>
+            <div class="header-subtitle">
+                OFFICIAL PDF REPOSITORY | BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO
+            </div>
+        </div>
+
+        <div class="search-card">
+            <input type="text" id="searchInput" class="search-box" placeholder="Search bills by title, number, or description...">
+            <button class="search-button" onclick="searchPDFs()"><i class="fas fa-search"></i> Search Library</button>
+            <button class="update-button" onclick="forceRefreshFromCloud()"><i class="fas fa-sync-alt"></i> Refresh from Server</button>
+            
+            <div class="bta-link-container">
+                <span class="bta-link" onclick="openBTAWebsite()">
+                    <i class="fas fa-globe"></i> Visit Official BTA Parliament Website →
+                </span>
+            </div>
+            
+            <div class="results-count" id="resultsCount"><i class="fas fa-file-pdf"></i> </div>
+            <div id="updateStatus"></div>
+        </div>
+
+        <!-- Main content area: Dynamic between Timeline and PDF results -->
+        <div id="mainContentArea" class="main-content-area">
+            <div class="loading">
+                <div class="spinner"></div>
+                <i class="fas fa-newspaper"></i> Loading Parliament Timeline...
+            </div>
+        </div>
+    </div>
+
+    <!-- News/Event Detail Modal -->
+    <div id="newsModal" class="news-modal">
+        <div class="news-modal-header">
+            <span class="news-modal-title" id="newsModalTitle">News Detail</span>
+            <button class="close-news-btn" onclick="closeNewsModal()"><i class="fas fa-times"></i> Close</button>
+        </div>
+        <div class="news-modal-body" id="newsModalBody">
+            <!-- Dynamic content will be inserted here -->
+        </div>
+    </div>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdfModal" class="modal">
+        <div class="modal-header">
+            <div class="modal-title" id="modalTitle">Loading...</div>
+        </div>
+        
+        <div id="pdfCanvasContainer" class="pdf-canvas-container">
+            <div class="pdf-loading">
+                <div class="spinner"></div>
+                <i class="fas fa-file-pdf"></i> Loading PDF document...
+            </div>
+        </div>
+        
+        <div class="bottom-controls">
+            <div class="nav-controls">
+                <button onclick="changePage(-1)"><i class="fas fa-chevron-left"></i> Previous</button>
+                <span class="page-info" id="pageInfo"><i class="fas fa-file"></i> Page 1 / 1</span>
+                <button onclick="changePage(1)">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="download-btn" onclick="downloadCurrentPDF()" title="Download PDF"><i class="fas fa-download"></i> Download</button>
+                <button class="toggle-controls-btn" id="toggleControlsBtn" onclick="toggleExtraControls()" title="Show/Hide Extra Options">
+                    <i class="fas fa-chevron-down"></i> Options
+                </button>
+                <button class="close-btn" onclick="closePDF()" title="Close"><i class="fas fa-times"></i> Close</button>
+            </div>
+        </div>
+        
+        <div class="extra-controls-panel" id="extraControlsPanel">
+            <div class="extra-controls">
+                <button onclick="zoomOut()"><i class="fas fa-search-minus"></i> Zoom Out</button>
+                <span class="zoom-percent" id="zoomPercent">100%</span>
+                <button onclick="zoomIn()"><i class="fas fa-search-plus"></i> Zoom In</button>
+                <button onclick="resetZoom()"><i class="fas fa-undo-alt"></i> Reset Zoom</button>
+                <button onclick="fitToWidth()"><i class="fas fa-expand"></i> Fit Width</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // PWA Installation
+        let deferredPrompt;
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            document.getElementById('installBanner').classList.add('show');
+        });
+        
+        function installPWA() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        console.log('User accepted the install prompt');
+                    }
+                    document.getElementById('installBanner').classList.remove('show');
+                    deferredPrompt = null;
+                });
+            }
+        }
+        
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+        
+        let pdfDatabase = [];
+        let currentSearch = '';
+        let currentPDFUrl = '';
+        let currentPDFTitle = '';
+        let isLoading = true;
+        let timelineEvents = [];
+        
+        let pdfDoc = null;
+        let currentPage = 1;
+        let currentZoom = 1.0;
+        let baseScale = 1.0;
+        let canvas = null;
+        let ctx = null;
+        
+        const REMOTE_JSON_URL = "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/pdf-list.json";
+        const CACHE_KEY = 'bta_pdf_library_official';
+        const CACHE_TIMESTAMP_KEY = 'bta_pdf_cache_time';
+        const CACHE_DURATION = 30 * 60 * 1000;
+
+        function openNewsDetail(event) {
+            const modal = document.getElementById('newsModal');
+            const modalTitle = document.getElementById('newsModalTitle');
+            const modalBody = document.getElementById('newsModalBody');
+            
+            modalTitle.innerHTML = event.title;
+            modalBody.innerHTML = `
+                <div class="news-date"><i class="fas fa-calendar-alt"></i> ${event.date}</div>
+                <div class="news-full-content">${event.fullDescription || event.description}</div>
+                <a href="${event.url}" target="_blank" class="news-link-btn"><i class="fas fa-external-link-alt"></i> Read Full Article on BTA Website</a>
+            `;
+            modal.classList.add('active');
+        }
+        
+        function closeNewsModal() {
+            document.getElementById('newsModal').classList.remove('active');
+        }
+
+        async function fetchAndDisplayTimeline() {
+            const container = document.getElementById('mainContentArea');
+            container.innerHTML = `<div class="loading"><div class="spinner"></div><i class="fas fa-newspaper"></i> Fetching latest updates from BTA Parliament...</div>`;
+            
+            try {
+                const proxyUrl = 'https://api.allorigins.win/raw?url=';
+                const targetUrl = 'https://parliament.bangsamoro.gov.ph/';
+                const response = await fetch(proxyUrl + encodeURIComponent(targetUrl));
+                
+                if (!response.ok) throw new Error('Network response was not ok');
+                
+                const htmlText = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(htmlText, 'text/html');
+                
+                const events = [];
+                const articles = doc.querySelectorAll('article, .news-item, .post, .event-item, .updates-item, .entry');
+                
+                if (articles.length > 0) {
+                    articles.forEach(article => {
+                        const titleElem = article.querySelector('h1, h2, h3, h4, .title, .entry-title');
+                        const dateElem = article.querySelector('.date, .time, .published, .event-date');
+                        const descElem = article.querySelector('p, .excerpt, .description, .summary');
+                        const linkElem = article.querySelector('a');
+                        
+                        if (titleElem && titleElem.innerText.trim().length > 0) {
+                            let articleUrl = '#';
+                            if (linkElem && linkElem.href) {
+                                articleUrl = linkElem.href;
+                            } else {
+                                articleUrl = `https://parliament.bangsamoro.gov.ph/`;
+                            }
+                            events.push({
+                                title: titleElem.innerText.trim(),
+                                date: dateElem ? dateElem.innerText.trim() : 'Recent Update',
+                                description: descElem ? descElem.innerText.trim().substring(0, 200) : 'Click to read more details from the Bangsamoro Parliament official website.',
+                                fullDescription: descElem ? descElem.innerText.trim() : 'No additional details available. Please click the link below to view the full article on the official BTA Parliament website.',
+                                url: articleUrl
+                            });
+                        }
+                    });
+                }
+                
+                if (events.length === 0) {
+                    events.push(
+                        {
+                            title: "BARMM Parliament approves bill renaming Datu Blah T. Sinsuat municipality to West Upi",
+                            date: "May 24, 2026",
+                            description: "The Bangsamoro Parliament has approved on third and final reading a measure renaming the Municipality of Datu Blah T. Sinsuat in Maguindanao del Norte to Municipality of West Upi. A plebiscite will be conducted to decide the ratification.",
+                            fullDescription: "The Bangsamoro Parliament has approved on third and final reading a measure renaming the Municipality of Datu Blah T. Sinsuat in Maguindanao del Norte to Municipality of West Upi. A plebiscite will be conducted to decide the ratification. This landmark decision aims to honor the cultural heritage of the Upi community.",
+                            url: "https://parliament.bangsamoro.gov.ph/"
+                        },
+                        {
+                            title: "BARMM bill proposes P1-Billion regional sports complex for athletes",
+                            date: "May 23, 2026",
+                            description: "A P1-billion sports complex is being proposed in the Bangsamoro Autonomous Region as a measure introduced on first reading in the Parliament to boost sports development.",
+                            fullDescription: "A P1-billion sports complex is being proposed in the Bangsamoro Autonomous Region as a measure introduced on first reading in the Parliament. The facility aims to provide world-class training grounds for athletes from the region and host major sporting events.",
+                            url: "https://parliament.bangsamoro.gov.ph/"
+                        },
+                        {
+                            title: "BARMM bill seeks one-stop centers for women, children abuse survivors",
+                            date: "May 22, 2026",
+                            description: "A bill pending in the Bangsamoro Parliament seeks to establish a network of 'Bahay Kanlungan' One-Stop Shop Centers for women and children who are victims of abuse.",
+                            fullDescription: "A bill pending in the Bangsamoro Parliament seeks to establish a network of 'Bahay Kanlungan' One-Stop Shop Centers for women and children who are victims of abuse. These centers will provide medical, legal, and psychological support services all in one location.",
+                            url: "https://parliament.bangsamoro.gov.ph/"
+                        }
+                    );
+                }
+                
+                timelineEvents = events.slice(0, 15);
+                displayTimeline();
+                
+            } catch (error) {
+                console.error('Error fetching timeline:', error);
+                timelineEvents = [
+                    {
+                        title: "BARMM Parliament approves bill renaming Datu Blah T. Sinsuat municipality to West Upi",
+                        date: "May 24, 2026",
+                        description: "The Bangsamoro Parliament has approved on third and final reading a measure renaming the Municipality of Datu Blah T. Sinsuat in Maguindanao del Norte to Municipality of West Upi.",
+                        fullDescription: "The Bangsamoro Parliament has approved on third and final reading a measure renaming the Municipality of Datu Blah T. Sinsuat in Maguindanao del Norte to Municipality of West Upi. A plebiscite will be conducted to decide the ratification.",
+                        url: "https://parliament.bangsamoro.gov.ph/"
+                    },
+                    {
+                        title: "BARMM bill proposes P1-Billion regional sports complex for athletes",
+                        date: "May 23, 2026",
+                        description: "A P1-billion sports complex is being proposed in the Bangsamoro Autonomous Region as a measure introduced on first reading in the Parliament.",
+                        fullDescription: "A P1-billion sports complex is being proposed in the Bangsamoro Autonomous Region as a measure introduced on first reading in the Parliament. The facility aims to provide world-class training grounds for athletes.",
+                        url: "https://parliament.bangsamoro.gov.ph/"
+                    },
+                    {
+                        title: "BARMM bill seeks one-stop centers for women, children abuse survivors",
+                        date: "May 22, 2026",
+                        description: "A bill pending in the Bangsamoro Parliament seeks to establish a network of 'Bahay Kanlungan' One-Stop Shop Centers for women and children who are victims of abuse.",
+                        fullDescription: "A bill pending in the Bangsamoro Parliament seeks to establish a network of 'Bahay Kanlungan' One-Stop Shop Centers for women and children who are victims of abuse. These centers will provide comprehensive support services.",
+                        url: "https://parliament.bangsamoro.gov.ph/"
+                    }
+                ];
+                displayTimeline();
+            }
+        }
+        
+        function displayTimeline() {
+            const container = document.getElementById('mainContentArea');
+            if (timelineEvents.length === 0) {
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-calendar-times"></i><h3>No recent updates found</h3><p>Please check the official BTA Parliament website for latest news.</p></div>`;
+                return;
+            }
+            
+            let html = `<div class="results-count" style="margin-bottom: 8px;"><i class="fas fa-calendar-alt"></i> Parliament Updates & Timeline (Click any news to read more)</div>`;
+            timelineEvents.forEach(event => {
+                html += `
+                    <div class="event-card" onclick='openNewsDetail(${JSON.stringify(event).replace(/'/g, "&#39;")})'>
+                        <div class="event-title">${escapeHtml(event.title)}</div>
+                        <div class="event-meta"><i class="fas fa-clock"></i> ${escapeHtml(event.date)}</div>
+                        <div class="event-desc">${escapeHtml(event.description)}</div>
+                    </div>
+                `;
+            });
+            html += `<div class="bta-link-container" style="margin-top: 8px; background: #f9f1e0;">
+                        <span class="bta-link" onclick="openBTAWebsite()" style="justify-content: center;">
+                            <i class="fas fa-external-link-alt"></i> View Full Calendar on Official BTA Website →
+                        </span>
+                     </div>`;
+            container.innerHTML = html;
+        }
+
+        function showPDFList() {
+            if (pdfDatabase.length > 0) {
+                loadPDFsIntoArea();
+            } else {
+                const container = document.getElementById('mainContentArea');
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-file-pdf"></i><h3>No PDFs Found</h3><p>Click "Refresh from Server" to load the library or try a different search.</p></div>`;
+            }
+        }
+        
+        function loadPDFsIntoArea() {
+            const container = document.getElementById('mainContentArea');
+            let filtered = [...pdfDatabase];
+            
+            if (currentSearch.trim()) {
+                const term = currentSearch.toLowerCase();
+                filtered = filtered.filter(pdf => 
+                    (pdf.title && pdf.title.toLowerCase().includes(term)) ||
+                    (pdf.description && pdf.description.toLowerCase().includes(term))
+                );
+            }
+            
+            document.getElementById('resultsCount').innerHTML = `<i class="fas fa-file-pdf"></i> Found ${filtered.length} document(s)`;
+            
+            if (filtered.length === 0) {
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-search"></i><h3>No Matching Bills</h3><button onclick="clearSearchAndReload()" style="margin-top:12px; background:#2d8c2d; color:white; border:none; padding:6px 16px; border-radius:20px; cursor:pointer;"><i class="fas fa-eraser"></i> Clear Search</button></div>`;
+                return;
+            }
+            
+            let html = `<div class="results-count" style="margin-bottom: 8px;"><i class="fas fa-file-pdf"></i> Search Results</div>`;
+            filtered.forEach(pdf => {
+                html += `
+                    <div class="pdf-card" onclick='openPDFWithJS("${escapeJsString(pdf.url)}", "${escapeJsString(pdf.title)}")'>
+                        <div class="pdf-title">${highlightText(pdf.title, currentSearch)}</div>
+                        <div class="pdf-meta"><i class="fas fa-calendar-alt"></i> ${pdf.date || 'Recent'}</div>
+                        <div class="pdf-desc">${highlightText(pdf.description || 'BTA Parliament Bill', currentSearch)}</div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function openBTAWebsite() {
+            window.open('https://parliament.bangsamoro.gov.ph/', '_blank');
+        }
+
+        function toggleExtraControls() {
+            const panel = document.getElementById('extraControlsPanel');
+            const btn = document.getElementById('toggleControlsBtn');
+            panel.classList.toggle('show');
+            if (panel.classList.contains('show')) {
+                btn.innerHTML = '<i class="fas fa-chevron-up"></i> Options';
+            } else {
+                btn.innerHTML = '<i class="fas fa-chevron-down"></i> Options';
+            }
+        }
+
+        function encodePDFUrl(url) {
+            try {
+                let decoded = decodeURIComponent(url);
+                return encodeURI(decoded);
+            } catch(e) {
+                return url;
+            }
+        }
+
+        async function fetchOfficialPDFList(showStatus = true) {
+            const statusDiv = document.getElementById('updateStatus');
+            
+            if (showStatus) {
+                statusDiv.innerHTML = '<i class="fas fa-sync-alt fa-spin"></i> Fetching PDF library from server...';
+                statusDiv.style.color = '#ffd700';
+            }
+            
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 15000);
+                
+                const response = await fetch(REMOTE_JSON_URL, {
+                    mode: 'cors',
+                    headers: { 'Accept': 'application/json' },
+                    signal: controller.signal
+                });
+                
+                clearTimeout(timeoutId);
+                
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                
+                const data = await response.json();
+                
+                if (!data || !data.pdfs || !Array.isArray(data.pdfs)) {
+                    throw new Error('Invalid JSON format');
+                }
+                
+                pdfDatabase = data.pdfs.filter(pdf => pdf.url && pdf.title);
+                
+                localStorage.setItem(CACHE_KEY, JSON.stringify(pdfDatabase));
+                localStorage.setItem(CACHE_TIMESTAMP_KEY, Date.now().toString());
+                
+                if (showStatus) {
+                    statusDiv.innerHTML = `<i class="fas fa-check-circle"></i> PDF Library loaded (${pdfDatabase.length} bills)`;
+                    statusDiv.style.color = '#4caf50';
+                    setTimeout(() => statusDiv.innerHTML = '', 3000);
+                }
+                return true;
+                
+            } catch (error) {
+                const cachedData = localStorage.getItem(CACHE_KEY);
+                if (cachedData) {
+                    pdfDatabase = JSON.parse(cachedData);
+                    if (pdfDatabase.length > 0) {
+                        if (showStatus) {
+                            statusDiv.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Using cached PDF library (${pdfDatabase.length} bills)`;
+                            statusDiv.style.color = '#ff9800';
+                            setTimeout(() => statusDiv.innerHTML = '', 4000);
+                        }
+                        return true;
+                    }
+                }
+                
+                if (showStatus) {
+                    statusDiv.innerHTML = `<i class="fas fa-times-circle"></i> Failed to load PDF library`;
+                    statusDiv.style.color = '#f44336';
+                }
+                return false;
+            }
+        }
+
+        async function forceRefreshFromCloud() {
+            localStorage.removeItem(CACHE_KEY);
+            localStorage.removeItem(CACHE_TIMESTAMP_KEY);
+            await fetchOfficialPDFList(true);
+            if (currentSearch.trim() !== '') {
+                loadPDFsIntoArea();
+            } else {
+                await fetchAndDisplayTimeline();
+                document.getElementById('searchInput').value = '';
+                currentSearch = '';
+            }
+            document.getElementById('resultsCount').innerHTML = `<i class="fas fa-file-pdf"></i> `;
+        }
+
+        async function searchPDFs() {
+            currentSearch = document.getElementById('searchInput').value;
+            if (currentSearch.trim() === '') {
+                await fetchAndDisplayTimeline();
+                document.getElementById('resultsCount').innerHTML = `<i class="fas fa-file-pdf"></i> `;
+            } else {
+                if (pdfDatabase.length === 0) {
+                    await fetchOfficialPDFList(true);
+                }
+                loadPDFsIntoArea();
+            }
+        }
+        
+        function clearSearchAndReload() {
+            document.getElementById('searchInput').value = '';
+            currentSearch = '';
+            fetchAndDisplayTimeline();
+            document.getElementById('resultsCount').innerHTML = `<i class="fas fa-file-pdf"></i> `;
+        }
+
+        async function openPDFWithJS(url, title) {
+            currentPDFUrl = url;
+            currentPDFTitle = title;
+            document.getElementById('modalTitle').innerHTML = escapeHtml(title);
+            document.getElementById('pdfModal').classList.add('active');
+            
+            const panel = document.getElementById('extraControlsPanel');
+            const btn = document.getElementById('toggleControlsBtn');
+            panel.classList.remove('show');
+            btn.innerHTML = '<i class="fas fa-chevron-down"></i> Options';
+            
+            const container = document.getElementById('pdfCanvasContainer');
+            container.innerHTML = '<div class="pdf-loading"><div class="spinner"></div><i class="fas fa-file-pdf"></i> Loading PDF document...</div>';
+            
+            canvas = document.createElement('canvas');
+            canvas.id = 'pdfCanvas';
+            ctx = canvas.getContext('2d');
+            container.innerHTML = '';
+            container.appendChild(canvas);
+            
+            try {
+                const encodedUrl = encodePDFUrl(url);
+                const loadingTask = pdfjsLib.getDocument({
+                    url: encodedUrl,
+                    cMapUrl: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@2.16.105/cmaps/',
+                    cMapPacked: true,
+                    disableAutoFetch: false,
+                    enableXfa: false
+                });
+                pdfDoc = await loadingTask.promise;
+                
+                currentPage = 1;
+                currentZoom = 1.0;
+                
+                const containerEl = document.getElementById('pdfCanvasContainer');
+                const containerWidth = containerEl.clientWidth - 40;
+                const firstPage = await pdfDoc.getPage(1);
+                baseScale = containerWidth / firstPage.getViewport({ scale: 1 }).width;
+                baseScale = Math.min(baseScale, 2.0);
+                
+                await renderPage(currentPage);
+                
+                document.getElementById('pageInfo').innerHTML = `<i class="fas fa-file"></i> Page ${currentPage} / ${pdfDoc.numPages}`;
+                updateZoomDisplay();
+                
+            } catch (error) {
+                console.error('PDF Load Error:', error);
+                container.innerHTML = `
+                    <div style="text-align:center; padding:50px; color:white;">
+                        <i class="fas fa-exclamation-triangle" style="font-size:48px; margin-bottom:20px;"></i>
+                        <h3>Could Not Load PDF</h3>
+                        <p>${error.message}</p>
+                        <button onclick="downloadCurrentPDF()" style="margin-top:20px; background:#2d8c2d; color:white; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;"><i class="fas fa-download"></i> Download PDF Instead</button>
+                        <button onclick="viewRawInTab()" style="margin-top:20px; margin-left:10px; background:#c41e3a; color:white; border:none; padding:10px 20px; border-radius:8px; cursor:pointer;"><i class="fas fa-external-link-alt"></i> Open in New Tab</button>
+                    </div>
+                `;
+            }
+        }
+        
+        async function renderPage(pageNum) {
+            if (!pdfDoc) return;
+            
+            try {
+                const page = await pdfDoc.getPage(pageNum);
+                
+                let scale = baseScale * currentZoom;
+                scale = Math.max(scale, 0.5);
+                scale = Math.min(scale, 3.0);
+                
+                const viewport = page.getViewport({ scale: scale });
+                
+                const outputScale = window.devicePixelRatio || 1;
+                canvas.width = Math.floor(viewport.width * outputScale);
+                canvas.height = Math.floor(viewport.height * outputScale);
+                canvas.style.width = Math.floor(viewport.width) + 'px';
+                canvas.style.height = Math.floor(viewport.height) + 'px';
+                
+                const transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null;
+                
+                const renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport,
+                    transform: transform,
+                    background: 'white',
+                    enableWebGL: true,
+                    renderInteractiveForms: true
+                };
+                
+                await page.render(renderContext).promise;
+                
+                document.getElementById('pageInfo').innerHTML = `<i class="fas fa-file"></i> Page ${pageNum} / ${pdfDoc.numPages}`;
+                updateZoomDisplay();
+                
+            } catch (error) {
+                console.error('Render error:', error);
+            }
+        }
+        
+        function updateZoomDisplay() {
+            const zoomPercentElem = document.getElementById('zoomPercent');
+            if (zoomPercentElem) {
+                const percent = Math.round(currentZoom * 100);
+                zoomPercentElem.innerHTML = `${percent}%`;
+            }
+        }
+        
+        function changePage(delta) {
+            if (!pdfDoc) return;
+            let newPage = currentPage + delta;
+            if (newPage >= 1 && newPage <= pdfDoc.numPages) {
+                currentPage = newPage;
+                renderPage(currentPage);
+            }
+        }
+        
+        function zoomIn() {
+            if (!pdfDoc) return;
+            currentZoom = Math.min(currentZoom + 0.1, 2.5);
+            renderPage(currentPage);
+        }
+        
+        function zoomOut() {
+            if (!pdfDoc) return;
+            currentZoom = Math.max(currentZoom - 0.1, 0.5);
+            renderPage(currentPage);
+        }
+        
+        function resetZoom() {
+            if (!pdfDoc) return;
+            currentZoom = 1.0;
+            renderPage(currentPage);
+        }
+        
+        async function fitToWidth() {
+            if (!pdfDoc) return;
+            const containerEl = document.getElementById('pdfCanvasContainer');
+            const containerWidth = containerEl.clientWidth - 40;
+            const currentPageObj = await pdfDoc.getPage(currentPage);
+            baseScale = containerWidth / currentPageObj.getViewport({ scale: 1 }).width;
+            baseScale = Math.min(baseScale, 2.0);
+            currentZoom = 1.0;
+            renderPage(currentPage);
+        }
+        
+        function viewRawInTab() {
+            if (currentPDFUrl) {
+                window.open(currentPDFUrl, '_blank');
+            }
+        }
+        
+        function downloadCurrentPDF() {
+            if (currentPDFUrl) {
+                const a = document.createElement('a');
+                a.href = currentPDFUrl;
+                a.download = currentPDFTitle.replace(/[^a-zA-Z0-9]/g, '_') + '.pdf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                showToast('<i class="fas fa-download"></i> Download started');
+            }
+        }
+        
+        function printCurrentPDF() {
+            if (currentPDFUrl) {
+                window.open(currentPDFUrl, '_blank');
+                showToast('<i class="fas fa-print"></i> Open the PDF and press Ctrl+P to print');
+            }
+        }
+        
+        function closePDF() {
+            document.getElementById('pdfModal').classList.remove('active');
+            pdfDoc = null;
+            currentPage = 1;
+            currentZoom = 1.0;
+            const panel = document.getElementById('extraControlsPanel');
+            panel.classList.remove('show');
+            const btn = document.getElementById('toggleControlsBtn');
+            if (btn) btn.innerHTML = '<i class="fas fa-chevron-down"></i> Options';
+        }
+        
+        function escapeJsString(str) {
+            if (!str) return '';
+            return str.replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+        }
+        
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/[&<>]/g, function(m) {
+                if (m === '&') return '&amp;';
+                if (m === '<') return '&lt;';
+                if (m === '>') return '&gt;';
+                return m;
+            });
+        }
+        
+        function highlightText(text, searchTerm) {
+            if (!searchTerm || !text) return escapeHtml(text);
+            const regex = new RegExp(`(${escapeRegex(searchTerm)})`, 'gi');
+            return escapeHtml(text).replace(regex, '<span class="highlight">$1</span>');
+        }
+        
+        function escapeRegex(string) {
+            return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+        
+        function showToast(message) {
+            let toast = document.getElementById('toast');
+            if (!toast) {
+                toast = document.createElement('div');
+                toast.id = 'toast';
+                toast.style.cssText = `
+                    position: fixed; bottom: 100px; left: 50%; transform: translateX(-50%);
+                    background: #1a5f1a; color: white; padding: 10px 20px;
+                    border-radius: 8px; font-size: 13px; z-index: 2000;
+                    opacity: 0; transition: opacity 0.3s; pointer-events: none;
+                    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                `;
+                document.body.appendChild(toast);
+            }
+            toast.innerHTML = message;
+            toast.style.opacity = '1';
+            setTimeout(() => toast.style.opacity = '0', 2000);
+        }
+        
+        function showBismillahLoading() {
+            const overlay = document.getElementById('loadingOverlay');
+            const percentElement = document.getElementById('loadingPercent');
+            let percent = 0;
+            
+            const interval = setInterval(() => {
+                percent += Math.floor(Math.random() * 12) + 4;
+                if (percent >= 100) {
+                    percent = 100;
+                    clearInterval(interval);
+                }
+                percentElement.innerHTML = `${percent}%`;
+            }, 150);
+            
+            setTimeout(() => {
+                overlay.classList.add('hide');
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 600);
+            }, 3000);
+        }
+        
+        document.getElementById('searchInput').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') searchPDFs();
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                if (document.getElementById('pdfModal').classList.contains('active')) {
+                    closePDF();
+                }
+                if (document.getElementById('newsModal').classList.contains('active')) {
+                    closeNewsModal();
+                }
+            }
+        });
+        
+        window.openPDFWithJS = openPDFWithJS;
+        window.changePage = changePage;
+        window.zoomIn = zoomIn;
+        window.zoomOut = zoomOut;
+        window.resetZoom = resetZoom;
+        window.fitToWidth = fitToWidth;
+        window.downloadCurrentPDF = downloadCurrentPDF;
+        window.printCurrentPDF = printCurrentPDF;
+        window.closePDF = closePDF;
+        window.searchPDFs = searchPDFs;
+        window.forceRefreshFromCloud = forceRefreshFromCloud;
+        window.openBTAWebsite = openBTAWebsite;
+        window.clearSearchAndReload = clearSearchAndReload;
+        window.viewRawInTab = viewRawInTab;
+        window.toggleExtraControls = toggleExtraControls;
+        window.openNewsDetail = openNewsDetail;
+        window.closeNewsModal = closeNewsModal;
+        window.installPWA = installPWA;
+        
+        initializeApp();
+        async function initializeApp() {
+            showBismillahLoading();
+            await fetchOfficialPDFList(false);
+            await fetchAndDisplayTimeline();
+        }
+        
+        window.addEventListener('resize', () => {
+            if (pdfDoc) {
+                fitToWidth();
+            }
+        });
+    </script>
+</body>
+</html>
