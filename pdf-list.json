@@ -1,60 +1,52 @@
 {
-  "name": "BParliament Handy Bills Library",
-  "short_name": "Handy Bills",
-  "description": "Approved Bangsamoro Parliament Bill Library - Official PDF Repository",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#1a5f1a",
-  "background_color": "#0d3b0d",
-  "orientation": "portrait",
-  "icons": [
+  "pdfs": [
     {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "id": 1,
+      "title": "Bill No. 1",
+      "filename": "Bill No. 1.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%201.pdf",
+      "description": "Bill No. 1 - Legislative document",
+      "date": "2026-05-22"
     },
     {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "id": 2,
+      "title": "Bill No. 2",
+      "filename": "Bill-No. 2.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.%202.pdf",
+      "description": "Constituting the Bangsamoro Parliament's Council BPC",
+      "date": "2026-05-22"
     },
     {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "id": 3,
+      "title": "BILL No. 3",
+      "filename": "BILL No. 3.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20No.%203.pdf",
+      "description": "Bill No. 3 - Legislative document",
+      "date": "2026-05-22"
     },
     {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "id": 4,
+      "title": "BILL NO. 4 MP Baintan Ampatuan strengthening Volunteerism",
+      "filename": "BILL NO. 4 MP Baintan Ampatuan strengthening Volunteerism.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20NO.%204%20MP%20Baintan%20Ampatuan%20strengthening%20Volunteerism.pdf",
+      "description": "Bill No. 4 - Strengthening Volunteerism",
+      "date": "2026-05-23"
     },
     {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "id": 5,
+      "title": "Bill No. 5 - MP Baintan Ampatuan - CREATING A SUB-DISTRICT ENGINEERING OFFICE FOR THE SPECIAL GEOGRAPHIC AREA SGA",
+      "filename": "Bill No. 5 -MP-Baintan-Ampatuan-CREATING-A-SUB-DISTRICT-ENGINEERING-OFFICE-FOR-THE-SPECIAL-GEOGRAPHIC-AREA-SGA-1.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%205%20-MP-Baintan-Ampatuan-CREATING-A-SUB-DISTRICT-ENGINEERING-OFFICE-FOR-THE-SPECIAL-GEOGRAPHIC-AREA-SGA-1.pdf",
+      "description": "Bill No. 5 - Creating Sub-District Engineering Office for SGA",
+      "date": "2026-05-23"
     },
     {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "id": 6,
+      "title": "Bill No. 06 - MP Baintan Ampatuan - CONSTITUTING THE PARLIAMENTARY DISTRICTS OF THE BANGSAMORO AUTONOMOUS REGION",
+      "filename": "Bill-No.-06-MP-Baintan-Ampatuan-CONSTITUTING-THE-PARLIAMENTARY-DISTRICTS-OF-THE-BANGSAMORO-AUTONOMOUS-REGION-1.pdf",
+      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.-06-MP-Baintan-Ampatuan-CONSTITUTING-THE-PARLIAMENTARY-DISTRICTS-OF-THE-BANGSAMORO-AUTONOMOUS-REGION-1.pdf",
+      "description": "Bill No. 6 - Constituting Parliamentary Districts",
+      "date": "2026-05-23"
     }
   ]
 }
