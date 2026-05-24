@@ -1,1 +1,18 @@
-
+{
+  "name": "BTA Parliament Bill Library",
+  "short_name": "BTA Library",
+  "description": "Approved Bangsamoro Parliament Bill Library - Official PDF Repository",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1a5f1a",
+  "background_color": "#0d3b0d",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
