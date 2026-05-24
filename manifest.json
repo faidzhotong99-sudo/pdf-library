@@ -1,6 +1,6 @@
 {
-  "name": "BTA Parliament Bill Library",
-  "short_name": "BTA Library",
+  "name": "BTA Parliament Bills Library",
+  "short_name": "Handy Bills",
   "description": "Approved Bangsamoro Parliament Bill Library - Official PDF Repository",
   "start_url": ".",
   "display": "standalone",
