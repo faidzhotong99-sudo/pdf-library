@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Approved Bangsamoro Parliament Bills Library | Official PDF Repository</title>
+    <title>BParliament Handy Bills Library | Official PDF Repository</title>
     
-    <!-- PWA Meta Tags -->
+    <!-- PWA Manifest - MUST COME EARLY for PWABuilder -->
     <link rel="manifest" href="manifest.json">
+    
+    <!-- PWA Meta Tags for iOS and Android Standalone Mode -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="BTA Library">
+    <meta name="apple-mobile-web-app-title" content="Handy Bills">
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#1a5f1a">
-    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bangsamoro_Parliament_Seal.png">
+    
+    <!-- App Icons for different platforms (using raw GitHub URLs) -->
+    <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/app-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/app-icon.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/app-icon.png">
     
     <!-- PDF.js - The most reliable PDF viewer -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    
     <!-- Google Fonts - Formal & Elegant -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (Free Icons) -->
+    
+    <!-- Font Awesome 6 (Free Icons) - No more question marks! -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -101,7 +110,7 @@
             letter-spacing: 1px;
         }
         
-        /* PWA Install Button */
+        /* PWA Install Banner */
         .install-banner {
             position: fixed;
             bottom: 20px;
@@ -728,10 +737,10 @@
             </div>
             
             <div class="header-title">
-                APPROVED BANGSAMORO PARLIAMENT BILLS LIBRARY
+                APPROVED BANGSAMORO PARLIAMENT BILL LIBRARY
             </div>
             <div class="header-subtitle">
-                PARA SA BANGSAMORO
+                OFFICIAL PDF REPOSITORY | BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO
             </div>
         </div>
 
