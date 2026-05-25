@@ -1,13 +1,11 @@
-[
-    {
-        "relation": ...,
-        "target": {
-            "namespace": ...,
+[{
+      "relation": ...,
+      "target" : { 
+            "namespace": ..., 
             "package_name": ...,
             "sha256_cert_fingerprints": [
-                "...",
-                "PASTE YOUR NEW SHA-256 FINGERPRINT HERE"
-            ]
-        }
-    }
-]
+                  "...",
+                  "4B:C1:D7:C7:8D:74:21:56:8C:E0:13:00:12:35:19:94:4B:33:1E:3C:2B:E5:7A:04:04:FE:F9:3E:58:30:B0:F4"
+            ] 
+      }
+}]
