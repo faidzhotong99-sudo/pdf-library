@@ -2,59 +2,43 @@
   "pdfs": [
     {
       "id": 1,
-      "title": "Bill No. 1",
-      "filename": "Bill-No-1.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%201.pdf",
-      "description": "Bill No. 1 - Legislative document",
-      "date": "2026-05-22"
+      "title": "Bill No. 29 - Bangsamoro Electoral Code of 2022",
+      "filename": "Bill-No.-29-Government-of-the-day-ELECTORAL-CODE-OF-BARMM-1-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-29-Government-of-the-day-ELECTORAL-CODE-OF-BARMM-1-1.pdf",
+      "description": "An Act providing for the Bangsamoro Electoral Code of the Bangsamoro Autonomous Region in Muslim Mindanao, prescribing structural, functional and procedural principles in elections within BARMM.",
+      "date": "2022-09-18"
     },
     {
       "id": 2,
-      "title": "Bill No. 2",
-      "filename": "Bill-No-2.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.%202.pdf",
-      "description": "Constituting the Bangsamoro Parliament's Council BPC",
-      "date": "2026-05-22"
+      "title": "Bill No. 30 - Bangsamoro Local Governance Code",
+      "filename": "Bill-No.-30-Government-of-the-day-LOCAL-GOVERNANCE-CODE_compressed.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-30-Government-of-the-day-LOCAL-GOVERNANCE-CODE_compressed.pdf",
+      "description": "An Act providing for the Bangsamoro Local Governance Code, establishing the framework for local governance within the Bangsamoro Autonomous Region.",
+      "date": "2022-09-18"
     },
     {
       "id": 3,
-      "title": "Bill No. 3",
-      "filename": "Bill-No-3.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20No.%203.pdf",
-      "description": "Bill No. 3 - Legislative document",
-      "date": "2026-05-22"
+      "title": "Bill No. 25 - Strengthening the Regional Transitional Justice and Reconciliation Program",
+      "filename": "Bill-No.-25-MP-Laisa-Alamia-STRENGTHENING-THE-REGIONAL-TRANSITIONAL-JUSTICE-AND-RECONCILIATION-PROGRAM.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-25-MP-Laisa-Alamia-STRENGTHENING-THE-REGIONAL-TRANSITIONAL-JUSTICE-AND-RECONCILIATION-PROGRAM.pdf",
+      "description": "An Act strengthening the Regional Transitional Justice and Reconciliation Program for the Bangsamoro Autonomous Region.",
+      "date": "2022-09-18"
     },
     {
       "id": 4,
-      "title": "Bill No. 4 - Strengthening Volunteerism",
-      "filename": "Bill-No-4-Volunteerism.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/BILL%20NO.%204%20MP%20Baintan%20Ampatuan%20strengthening%20Volunteerism.pdf",
-      "description": "Bill No. 4 - Strengthening Volunteerism by MP Baintan Ampatuan",
-      "date": "2026-05-23"
+      "title": "Bill No. 31 - Creating the Bangsamoro Regional Institute for Higher Islamic Studies",
+      "filename": "Bill-No.-31-Government-of-the-day-CREATING-THE-BANGSAMORO-REGIONAL-INSTITUTE-FOR-HIGHER-ISLAMIC-STUDIES.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-31-Government-of-the-day-CREATING-THE-BANGSAMORO-REGIONAL-INSTITUTE-FOR-HIGHER-ISLAMIC-STUDIES.pdf",
+      "description": "An Act creating the Bangsamoro Regional Institute for Higher Islamic Studies, repealing Muslim Mindanao Autonomy Act No. 164 (Regional Madrasah Graduate Education Act of 2003).",
+      "date": "2022-09-18"
     },
     {
       "id": 5,
-      "title": "Bill No. 5 - Creating Sub-District Engineering Office for SGA",
-      "filename": "Bill-No-5-SGA-Engineering-Office.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No.%205%20-MP-Baintan-Ampatuan-CREATING-A-SUB-DISTRICT-ENGINEERING-OFFICE-FOR-THE-SPECIAL-GEOGRAPHIC-AREA-SGA-1.pdf",
-      "description": "Bill No. 5 - Creating Sub-District Engineering Office for SGA by MP Baintan Ampatuan",
-      "date": "2026-05-23"
-    },
-    {
-      "id": 6,
-      "title": "Bill No. 6 - Constituting Parliamentary Districts",
-      "filename": "Bill-No-6-Parliamentary-Districts.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill-No.-06-MP-Baintan-Ampatuan-CONSTITUTING-THE-PARLIAMENTARY-DISTRICTS-OF-THE-BANGSAMORO-AUTONOMOUS-REGION-1.pdf",
-      "description": "Bill No. 6 - Constituting Parliamentary Districts by MP Baintan Ampatuan",
-      "date": "2026-05-23"
-    },
-    {
-      "id": 7,
-      "title": "Bill No. 470 - Supplemental Funds for Bangsamoro Government",
-      "filename": "Bill-No-470-Supplemental-Funds.pdf",
-      "url": "https://raw.githubusercontent.com/faidzhotong99-sudo/pdf-library/main/Bill%20No%207%20MP%20Engr.%20Baintan%20Ampatuan%20-%20An%20Act%20Strenthening%20Disaster%20Risk%20Reduction%20and%20Management%20in%20BARMM.pdf",
-      "description": "Bill No. 470 Bill 470 Atty. Kitem Kadatuan - Appropriating supplemental funds for the operation of the Bangsamoro Government",
-      "date": "2026-05-23"
+      "title": "Bill No. 35 - Establishing a Bangsamoro Memorial Marker and Eco-Park in Camp Abubakar",
+      "filename": "Bill-No.-35-Government-of-the-day-ESTABLISHING-A-BANGSAMORO-MEMORIAL-MARKER-AND-ECO-PARK-IN-CAMP-ABUBAKAR-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-35-Government-of-the-day-ESTABLISHING-A-BANGSAMORO-MEMORIAL-MARKER-AND-ECO-PARK-IN-CAMP-ABUBAKAR-1.pdf",
+      "description": "An Act establishing a Bangsamoro Memorial Marker and Eco-Park in Camp Abubakar, Municipality of Barira, Maguindanao to honor the Shuhada/Martyrs of the Bangsamoro struggle.",
+      "date": "2022-09-18"
     }
   ]
 }
