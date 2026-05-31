@@ -1,23 +1,7 @@
 {
   "pdfs": [
     {
-      "id": 1,
-      "title": "Bill No. 29 - Bangsamoro Electoral Code of 2022",
-      "filename": "Bill-No.-29-Government-of-the-day-ELECTORAL-CODE-OF-BARMM-1-1.pdf",
-      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-29-Government-of-the-day-ELECTORAL-CODE-OF-BARMM-1-1.pdf",
-      "description": "An Act providing for the Bangsamoro Electoral Code of the Bangsamoro Autonomous Region in Muslim Mindanao, prescribing structural, functional and procedural principles in elections within BARMM.",
-      "date": "2022-09-18"
-    },
-    {
-      "id": 2,
-      "title": "Bill No. 30 - Bangsamoro Local Governance Code",
-      "filename": "Bill-No.-30-Government-of-the-day-LOCAL-GOVERNANCE-CODE_compressed.pdf",
-      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-30-Government-of-the-day-LOCAL-GOVERNANCE-CODE_compressed.pdf",
-      "description": "An Act providing for the Bangsamoro Local Governance Code, establishing the framework for local governance within the Bangsamoro Autonomous Region.",
-      "date": "2022-09-18"
-    },
-    {
-      "id": 3,
+      "id": 25,
       "title": "Bill No. 25 - Strengthening the Regional Transitional Justice and Reconciliation Program",
       "filename": "Bill-No.-25-MP-Laisa-Alamia-STRENGTHENING-THE-REGIONAL-TRANSITIONAL-JUSTICE-AND-RECONCILIATION-PROGRAM.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-25-MP-Laisa-Alamia-STRENGTHENING-THE-REGIONAL-TRANSITIONAL-JUSTICE-AND-RECONCILIATION-PROGRAM.pdf",
@@ -25,19 +9,35 @@
       "date": "2022-09-18"
     },
     {
-      "id": 4,
-      "title": "Bill No. 31 - Creating the Bangsamoro Regional Institute for Higher Islamic Studies",
-      "filename": "Bill-No.-31-Government-of-the-day-CREATING-THE-BANGSAMORO-REGIONAL-INSTITUTE-FOR-HIGHER-ISLAMIC-STUDIES.pdf",
-      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-31-Government-of-the-day-CREATING-THE-BANGSAMORO-REGIONAL-INSTITUTE-FOR-HIGHER-ISLAMIC-STUDIES.pdf",
-      "description": "An Act creating the Bangsamoro Regional Institute for Higher Islamic Studies, repealing Muslim Mindanao Autonomy Act No. 164 (Regional Madrasah Graduate Education Act of 2003).",
+      "id": 29,
+      "title": "Bill No. 29 - Bangsamoro Electoral Code of 2022",
+      "filename": "Bill-No.-29-Government-of-the-day-ELECTORAL-CODE-OF-BARMM-1-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-29-Government-of-the-day-ELECTORAL-CODE-OF-BARMM-1-1.pdf",
+      "description": "An Act providing for the Bangsamoro Electoral Code of the Bangsamoro Autonomous Region in Muslim Mindanao.",
       "date": "2022-09-18"
     },
     {
-      "id": 5,
+      "id": 30,
+      "title": "Bill No. 30 - Bangsamoro Local Governance Code",
+      "filename": "Bill-No.-30-Government-of-the-day-LOCAL-GOVERNANCE-CODE_compressed.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-30-Government-of-the-day-LOCAL-GOVERNANCE-CODE_compressed.pdf",
+      "description": "An Act providing for the Bangsamoro Local Governance Code, establishing the framework for local governance within BARMM.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 31,
+      "title": "Bill No. 31 - Creating the Bangsamoro Regional Institute for Higher Islamic Studies",
+      "filename": "Bill-No.-31-Government-of-the-day-CREATING-THE-BANGSAMORO-REGIONAL-INSTITUTE-FOR-HIGHER-ISLAMIC-STUDIES.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-31-Government-of-the-day-CREATING-THE-BANGSAMORO-REGIONAL-INSTITUTE-FOR-HIGHER-ISLAMIC-STUDIES.pdf",
+      "description": "An Act creating the Bangsamoro Regional Institute for Higher Islamic Studies.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 35,
       "title": "Bill No. 35 - Establishing a Bangsamoro Memorial Marker and Eco-Park in Camp Abubakar",
       "filename": "Bill-No.-35-Government-of-the-day-ESTABLISHING-A-BANGSAMORO-MEMORIAL-MARKER-AND-ECO-PARK-IN-CAMP-ABUBAKAR-1.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-35-Government-of-the-day-ESTABLISHING-A-BANGSAMORO-MEMORIAL-MARKER-AND-ECO-PARK-IN-CAMP-ABUBAKAR-1.pdf",
-      "description": "An Act establishing a Bangsamoro Memorial Marker and Eco-Park in Camp Abubakar, Municipality of Barira, Maguindanao to honor the Shuhada/Martyrs of the Bangsamoro struggle.",
+      "description": "An Act establishing a Bangsamoro Memorial Marker and Eco-Park in Camp Abubakar, Barira, Maguindanao.",
       "date": "2022-09-18"
     },
     {
@@ -45,7 +45,7 @@
       "title": "Bill No. 36 - Hashim and Mimbantas Memorial Site",
       "filename": "Bill-No.-36-Government-of-the-day-TO-DECLARE-THE-BURIAL-SITE-OF-THE-LATE-SHEIKH-SALAMAT-HASHIM-1.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-36-Government-of-the-day-TO-DECLARE-THE-BURIAL-SITE-OF-THE-LATE-SHEIKH-SALAMAT-HASHIM-1.pdf",
-      "description": "An Act to declare the burial site of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as 'Hashim and Mimbantas Memorial Site' in Camp Bushra Somiorang, Butig, Lanao del Sur.",
+      "description": "An Act to declare the burial site of Sheikh Salamat Hashim and Alim Abdul Aziz Mimbantas as a memorial site.",
       "date": "2022-09-18"
     },
     {
@@ -53,23 +53,327 @@
       "title": "Bill No. 37 - Bangsamoro Science High School System",
       "filename": "Bill-No.-37-Government-of-the-day-ESTABLISHING-THE-BANGSAMORO-SCIENCE-HIGH-SCHOOL-SYSTEM-1.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-37-Government-of-the-day-ESTABLISHING-THE-BANGSAMORO-SCIENCE-HIGH-SCHOOL-SYSTEM-1.pdf",
-      "description": "An Act establishing the Bangsamoro Science High School System in Parang, Maguindanao, offering free education to qualified Bangsamoro learners.",
+      "description": "An Act establishing the Bangsamoro Science High School System in Parang, Maguindanao.",
       "date": "2022-09-18"
+    },
+    {
+      "id": 39,
+      "title": "Bill No. 39 - Establishing the Bangsamoro Agriculture and Fisheries Training Institute",
+      "filename": "Bill-No.-39-Government-of-the-day-ESTABLISHING-THE-BANGSAMORO-AGRICULTURE-AND-FISHERIES-TRAINING-INSTITUTE-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-39-Government-of-the-day-ESTABLISHING-THE-BANGSAMORO-AGRICULTURE-AND-FISHERIES-TRAINING-INSTITUTE-1.pdf",
+      "description": "An Act establishing the Bangsamoro Agriculture and Fisheries Training Institute.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 43,
+      "title": "Bill No. 43 - Establishing the Administrative Capital of the Bangsamoro Government in Parang",
+      "filename": "Bill-No.-43-Government-of-the-day-ESTABLISHING-THE-ADMINISTRATIVE-CAPITAL-OF-THE-BANGSAMORO-GOVERNMENT-IN-THE-MUNICIPALITY-OF-PARANG.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-43-Government-of-the-day-ESTABLISHING-THE-ADMINISTRATIVE-CAPITAL-OF-THE-BANGSAMORO-GOVERNMENT-IN-THE-MUNICIPALITY-OF-PARANG.pdf",
+      "description": "An Act establishing the Administrative Capital of the Bangsamoro Government in the Municipality of Parang.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 44,
+      "title": "Bill No. 44 - Creating a Bangsamoro Veteran Mujahideen Mujahidat Affairs Office",
+      "filename": "Bill-No.-44-Government-of-the-day-CREATING-A-BANGSAMORO-VETERAN-MUJAHIDEEN-MUJAHIDAT-AFFAIRS-OFFICE-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-44-Government-of-the-day-CREATING-A-BANGSAMORO-VETERAN-MUJAHIDEEN-MUJAHIDAT-AFFAIRS-OFFICE-1.pdf",
+      "description": "An Act creating a Bangsamoro Veteran Mujahideen Mujahidat Affairs Office.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 54,
+      "title": "Bill No. 54 - Budget Expenditure Program",
+      "filename": "Bill-No.-54-Government-of-the-Day-BUDGET-EXPENDITURE-PROGRAM.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-54-Government-of-the-Day-BUDGET-EXPENDITURE-PROGRAM.pdf",
+      "description": "An Act providing for the Budget Expenditure Program of the Bangsamoro Government.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 55,
+      "title": "Bill No. 55 - Creating the Bangsamoro Nutrition Council",
+      "filename": "Bill-No.-55-MP-Kadil-Sinolinding-CREATING-THE-BANGSAMORO-NUTRITION-COUNCIL-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/09/Bill-No.-55-MP-Kadil-Sinolinding-CREATING-THE-BANGSAMORO-NUTRITION-COUNCIL-IN-THE-BANGSAMORO-AUTONOMOUS-REGION-IN-MUSLIM-MINDANAO.pdf",
+      "description": "An Act creating the Bangsamoro Nutrition Council in BARMM.",
+      "date": "2022-09-18"
+    },
+    {
+      "id": 59,
+      "title": "Bill No. 59 - Labor and Employment Code",
+      "filename": "Bill-No.-59-MP-Romeo-Sema-LABOR-AND-EMPLOYMENT-CODE.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Bill-No.-59-MP-Romeo-Sema-LABOR-AND-EMPLOYMENT-CODE.pdf",
+      "description": "An Act providing for the Labor and Employment Code of the Bangsamoro Autonomous Region.",
+      "date": "2022-10-01"
+    },
+    {
+      "id": 99,
+      "title": "Bill No. 99 - Establishing a Level 1 General Hospital in South Ubian",
+      "filename": "Bill-No.-99-MP-Eddie-Alih-ACT-ESTABLISHING-A-LEVEL-1-GENERAL-HOSPITAL-WITH-FIFTY-50-BED-CAPACITY-IN-THE-MUNIPALITY-OF-SOUTH-UBIAN.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Bill-No.-99-MP-Eddie-Alih-ACT-ESTABLISHING-A-LEVEL-1-GENERAL-HOSPITAL-WITH-FIFTY-50-BED-CAPACITY-IN-THE-MUNIPALITY-OF-SOUTH-UBIAN.pdf",
+      "description": "An Act establishing a Level 1 General Hospital in the Municipality of South Ubian.",
+      "date": "2022-10-01"
+    },
+    {
+      "id": 100,
+      "title": "Bill No. 100 - Upgrading the Datu Alawaddin T. Bandon Sr. Memorial Hospital in Sibutu",
+      "filename": "Bill-No.-100-MP-Eddie-Alih-UPGRADING-THE-DATU-ALAWADDIN-T.-BANDON-SR.-MEMORIAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-SIBUTU.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Bill-No.-100-MP-Eddie-Alih-UPGRADING-THE-DATU-ALAWADDIN-T.-BANDON-SR.-MEMORIAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-SIBUTU.pdf",
+      "description": "An Act upgrading the Datu Alawaddin T. Bandon Sr. Memorial Hospital in Sibutu.",
+      "date": "2022-10-01"
+    },
+    {
+      "id": 104,
+      "title": "Bill No. 104 - Establishing a Level 1 General Hospital in Tipo-Tipo",
+      "filename": "Bill-No.-104-ENHANCED-MP-Amilbahar-Mawallil-ESTABLISHING-A-LEVEL-I-GENERAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-TIPO-TIPO-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Bill-No.-104-ENHANCED-MP-Amilbahar-Mawallil-ESTABLISHING-A-LEVEL-I-GENERAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-TIPO-TIPO-1.pdf",
+      "description": "An Act establishing a Level 1 General Hospital in the Municipality of Tipo-Tipo.",
+      "date": "2022-10-01"
+    },
+    {
+      "id": 105,
+      "title": "Bill No. 105 - Establishing a Level 1 General Hospital in Maluso",
+      "filename": "Bill-No.-105-ENHANCED-MP-Amilbahar-Mawallil-ESTABLISHING-A-LEVEL-I-GENERAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-MALUSO-2.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/10/Bill-No.-105-ENHANCED-MP-Amilbahar-Mawallil-ESTABLISHING-A-LEVEL-I-GENERAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-MALUSO-2.pdf",
+      "description": "An Act establishing a Level 1 General Hospital in the Municipality of Maluso.",
+      "date": "2022-10-01"
+    },
+    {
+      "id": 123,
+      "title": "Bill No. 123 - Creating and Establishing the Pura Municipal Hospital",
+      "filename": "Bill-No.-123-MP-Baintan-Ampatuan-CREATING-AND-ESTABLISHING-THE-PURA-MUNICIPAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-DATU-BLAH-T.-SINSUAT-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-123-MP-Baintan-Ampatuan-CREATING-AND-ESTABLISHING-THE-PURA-MUNICIPAL-HOSPITAL-IN-THE-MUNICIPALITY-OF-DATU-BLAH-T.-SINSUAT-1.pdf",
+      "description": "An Act creating and establishing the Pura Municipal Hospital in Datu Blah T. Sinsuat.",
+      "date": "2022-12-01"
+    },
+    {
+      "id": 127,
+      "title": "Bill No. 127 - 2020 and 2021 SDF Extension",
+      "filename": "Bill-No.-127-MP-Eduard-U.-Guerra-2020-AND-2021-SDF-EXTENSION.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-127-MP-Eduard-U.-Guerra-2020-AND-2021-SDF-EXTENSION.pdf",
+      "description": "An Act extending the 2020 and 2021 Special Development Fund.",
+      "date": "2022-12-01"
+    },
+    {
+      "id": 128,
+      "title": "Bill No. 128 - Extending the General Appropriations Act Until December 31, 2023",
+      "filename": "Bill-No.-128-MP-Eduard-U.-Guerra-EXTENDING-THE-GENERAL-APPROPRIATIONS-ACT-OF-THE-BANGSAMORO-UNTIL-DECEMBER-31-2023.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-128-MP-Eduard-U.-Guerra-EXTENDING-THE-GENERAL-APPROPRIATIONS-ACT-OF-THE-BANGSAMORO-UNTIL-DECEMBER-31-2023.pdf",
+      "description": "An Act extending the General Appropriations Act of the Bangsamoro until December 31, 2023.",
+      "date": "2022-12-01"
     },
     {
       "id": 136,
       "title": "Bill No. 136 - Creating the Municipality of Ligawasan",
       "filename": "Bill-No.-136-Government-of-the-day-AN-ACT-CREATING-THE-MUNICIPALITY-OF-LIGAWASAN.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2022/12/Bill-No.-136-Government-of-the-day-AN-ACT-CREATING-THE-MUNICIPALITY-OF-LIGAWASAN.pdf",
-      "description": "An Act creating the Municipality of Ligawasan from barangays in Pikit, North Cotabato, within the Special Geographic Areas of BARMM.",
+      "description": "An Act creating the Municipality of Ligawasan from barangays in Pikit, North Cotabato.",
       "date": "2022-12-01"
+    },
+    {
+      "id": 139,
+      "title": "Bill No. 139 - Establishing Northern Kabuntalan Municipal Hospital",
+      "filename": "Bill-No.-139-MP-Hashemi-Dilangalen-AN-ACT-ESTABLISHING-NORTHERN-KABUNTALAN-MUNICIPAL-HOSPITAL.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/01/Bill-No.-139-MP-Hashemi-Dilangalen-AN-ACT-ESTABLISHING-NORTHERN-KABUNTALAN-MUNICIPAL-HOSPITAL.pdf",
+      "description": "An Act establishing the Northern Kabuntalan Municipal Hospital.",
+      "date": "2023-01-15"
+    },
+    {
+      "id": 179,
+      "title": "Bill No. 179 - Use of Funds for Unpaid Obligations",
+      "filename": "Bill-No.-179-GOVERNMENT-OF-THE-DAY-Use-of-Funds-for-the-unpai.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/05/Bill-No.-179-GOVERNMENT-OF-THE-DAY-Use-of-Funds-for-the-unpai.pdf",
+      "description": "An Act authorizing the use of funds for unpaid obligations.",
+      "date": "2023-05-01"
+    },
+    {
+      "id": 190,
+      "title": "Bill No. 190 - Creating the Municipality of Datu Balabaran",
+      "filename": "Bill-No.-190-MP-Lanang-T.-Ali-CREATING-THE-MUNICIPALITY-OF-DATU-BALABARAN.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-190-MP-Lanang-T.-Ali-CREATING-THE-MUNICIPALITY-OF-DATU-BALABARAN.pdf",
+      "description": "An Act creating the Municipality of Datu Balabaran.",
+      "date": "2023-06-01"
+    },
+    {
+      "id": 191,
+      "title": "Bill No. 191 - Creating Municipality of Sheik Abas Hamza",
+      "filename": "Bill-No.-191-MP-Lanang-T.-Ali-CREATING-MUNICIPALITY-OF-SHEIK-ABAS-HAMZA.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-191-MP-Lanang-T.-Ali-CREATING-MUNICIPALITY-OF-SHEIK-ABAS-HAMZA.pdf",
+      "description": "An Act creating the Municipality of Sheik Abas Hamza.",
+      "date": "2023-06-01"
+    },
+    {
+      "id": 192,
+      "title": "Bill No. 192 - Special Holiday in BARMM",
+      "filename": "Bill-No.-192-Government-of-the-day-SPECIAL-HOLIDAY-IN-BARMM.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-192-Government-of-the-day-SPECIAL-HOLIDAY-IN-BARMM.pdf",
+      "description": "An Act declaring a special holiday in the Bangsamoro Autonomous Region.",
+      "date": "2023-06-01"
+    },
+    {
+      "id": 223,
+      "title": "Bill No. 223 - Municipality of Nuling",
+      "filename": "Bill-No.-223-MP-Baileng-Mantawil-MUNICIPALITY-OF-NULING.docx.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/06/Bill-No.-223-MP-Baileng-Mantawil-MUNICIPALITY-OF-NULING.docx.pdf",
+      "description": "An Act creating the Municipality of Nuling.",
+      "date": "2023-06-15"
+    },
+    {
+      "id": 225,
+      "title": "Bill No. 225 - Upgrading to Level III Hospital",
+      "filename": "Bill-No.-225-Enhanced-MP-Baintan-Ampatuan-TO-A-LEVEL-III-HOSPITAL-AND-THEREBY-INCREASING-ITS-BED-CAPACITY-TO-THREE-HUNDRED-FIFTY-3.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/07/Bill-No.-225-Enhanced-MP-Baintan-Ampatuan-TO-A-LEVEL-III-HOSPITAL-AND-THEREBY-INCREASING-ITS-BED-CAPACITY-TO-THREE-HUNDRED-FIFTY-3.pdf",
+      "description": "An Act upgrading a hospital to Level III and increasing bed capacity.",
+      "date": "2023-07-01"
+    },
+    {
+      "id": 246,
+      "title": "Bill No. 246 - Converting IDH to Iranon Provincial Hospital",
+      "filename": "Bill-No.-246-MP-Ubaida-C.-Pacasem-Converting-IDH-to-Iranon-Provincial-Hospital.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/08/Bill-No.-246-MP-Ubaida-C.-Pacasem-Converting-IDH-to-Iranon-Provincial-Hospital.pdf",
+      "description": "An Act converting the IDH to Iranon Provincial Hospital.",
+      "date": "2023-08-01"
+    },
+    {
+      "id": 257,
+      "title": "Bill No. 257 - Aleem Abdulazis S. Mimbantas Memorial Hospital",
+      "filename": "Bill-No.-257-MP-Said-M.-Shiek-ALEEM-ABDULAZIS-S.-MIMBANTAS-MEMORIAL-HOSPITAL.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/10/Bill-No.-257-MP-Said-M.-Shiek-ALEEM-ABDULAZIS-S.-MIMBANTAS-MEMORIAL-HOSPITAL.pdf",
+      "description": "An Act establishing the Aleem Abdulazis S. Mimbantas Memorial Hospital.",
+      "date": "2023-10-01"
+    },
+    {
+      "id": 265,
+      "title": "Bill No. 265 - Continuing the Validity of 2020-2022 Special Development Fund",
+      "filename": "Bill-No.-265-Government-of-the-Day-CONTINUING-THE-VALIDITY-OF-THE-2020-TO-2022-SPECIAL-DEVELOPMENT-FUND-.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-265-Government-of-the-Day-CONTINUING-THE-VALIDITY-OF-THE-2020-TO-2022-SPECIAL-DEVELOPMENT-FUND-.pdf",
+      "description": "An Act continuing the validity of the 2020-2022 Special Development Fund.",
+      "date": "2023-11-01"
+    },
+    {
+      "id": 266,
+      "title": "Bill No. 266 - Continued Use of Funds for Unpaid Obligations",
+      "filename": "Bill-No.-266-Government-of-the-Day-CONTINUED-USE-OF-FUNDS-FOR-THE-RELEASE-AND-DISBURSEMENT-OF-UNPAID-OBLIGATIONS-OF-FY-2023-APPROPRIATIONS.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/11/Bill-No.-266-Government-of-the-Day-CONTINUED-USE-OF-FUNDS-FOR-THE-RELEASE-AND-DISBURSEMENT-OF-UNPAID-OBLIGATIONS-OF-FY-2023-APPROPRIATIONS.pdf",
+      "description": "An Act for the continued use of funds for unpaid obligations of FY 2023 appropriations.",
+      "date": "2023-11-01"
+    },
+    {
+      "id": 267,
+      "title": "Bill No. 267 - Parliamentary Districts",
+      "filename": "Bill-No.-267-Government-of-the-Day-PARLIAMENTARY-DISTRICTS-IN.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2023/12/Bill-No.-267-Government-of-the-Day-PARLIAMENTARY-DISTRICTS-IN.pdf",
+      "description": "An Act establishing parliamentary districts in the Bangsamoro Autonomous Region.",
+      "date": "2023-12-01"
+    },
+    {
+      "id": 273,
+      "title": "Bill No. 273 - To Recognize, Develop and Protect Bangsamoro Cultural Heritage",
+      "filename": "Bill-No.-273-Government-of-the-Day-TO-RECOGNIZE-DEVELOP-AND-.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/01/Bill-No.-273-Government-of-the-Day-TO-RECOGNIZE-DEVELOP-AND-.pdf",
+      "description": "An Act to recognize, develop, and protect Bangsamoro cultural heritage.",
+      "date": "2024-01-01"
+    },
+    {
+      "id": 282,
+      "title": "Bill No. 282 - Thirty-Day Paid Leave to Perform Pilgrimage",
+      "filename": "Bill-No.-282-%E2%80%93-MP-Abdullah-Hashim-A-THIRTY-30-CALENDAR-DAYS-PAID-LEAVE-TO-PERFORM-PILGRIMAGE.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/02/Bill-No.-282-%E2%80%93-MP-Abdullah-Hashim-A-THIRTY-30-CALENDAR-DAYS-PAID-LEAVE-TO-PERFORM-PILGRIMAGE.pdf",
+      "description": "An Act granting thirty calendar days paid leave to perform pilgrimage.",
+      "date": "2024-02-01"
+    },
+    {
+      "id": 325,
+      "title": "Bill No. 325 - Bangsamoro Budget System Act",
+      "filename": "Bill-No.-325-Government-of-the-Day-Bangsamoro-Budget-System-Act.docx.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-325-Government-of-the-Day-Bangsamoro-Budget-System-Act.docx.pdf",
+      "description": "An Act establishing the Bangsamoro Budget System.",
+      "date": "2024-08-01"
+    },
+    {
+      "id": 328,
+      "title": "Bill No. 328 - Renaming Datu Blah T. Sinsuat to West Upi",
+      "filename": "Bill-No.-328-MP-Baintan-A.-Ampatuan-RENAMING-DATU-BLAH-T.-SIN.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2024/08/Bill-No.-328-MP-Baintan-A.-Ampatuan-RENAMING-DATU-BLAH-T.-SIN.pdf",
+      "description": "An Act renaming the Municipality of Datu Blah T. Sinsuat to West Upi.",
+      "date": "2024-08-01"
+    },
+    {
+      "id": 347,
+      "title": "Bill No. 347 - Re-apportionment of Vacant Parliamentary Seats",
+      "filename": "Bill-No.-347-MP-Baintan-A.-Ampatuan-Re-apportionment-VACANT-PARLIAMENTARY-SEATS.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/03/Bill-No.-347-MP-Baintan-A.-Ampatuan-Re-apportionment-VACANT-PARLIAMENTARY-SEATS.pdf",
+      "description": "An Act for the re-apportionment of vacant parliamentary seats.",
+      "date": "2025-03-01"
+    },
+    {
+      "id": 349,
+      "title": "Bill No. 349 - 2025 Supplemental Funds",
+      "filename": "Bill-No.-349-Government-of-the-day-2025-SUPPLEMENTAL-FUNDS-1.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/02/Bill-No.-349-Government-of-the-day-2025-SUPPLEMENTAL-FUNDS-1.pdf",
+      "description": "An Act appropriating supplemental funds for FY 2025.",
+      "date": "2025-02-01"
+    },
+    {
+      "id": 350,
+      "title": "Bill No. 350 - Montaner Hospital Substitute Bill",
+      "filename": "Bill-No.-350-MP-Kadil-M.-Sinolinding-MONTANER-HOSPITAL-SUBSTITUTE-BILL.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/03/Bill-No.-350-MP-Kadil-M.-Sinolinding-MONTANER-HOSPITAL-SUBSTITUTE-BILL.pdf",
+      "description": "A substitute bill for the Montaner Hospital.",
+      "date": "2025-03-01"
+    },
+    {
+      "id": 351,
+      "title": "Bill No. 351 - Parliamentary Re-District",
+      "filename": "Bill-No.-351-Government-of-the-Day-Parliamentary-Re-District.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-351-Government-of-the-Day-Parliamentary-Re-District.pdf",
+      "description": "An Act for the parliamentary re-district of the Bangsamoro Autonomous Region.",
+      "date": "2025-04-01"
+    },
+    {
+      "id": 353,
+      "title": "Bill No. 353 - Bangsamoro TJR Bill",
+      "filename": "Bill-No.-353-Government-of-the-Day-Bangsamoro-TJR-Bill_Body.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-353-Government-of-the-Day-Bangsamoro-TJR-Bill_Body.pdf",
+      "description": "An Act providing for the Bangsamoro Transitional Justice and Reconciliation (TJR) program.",
+      "date": "2025-04-01"
+    },
+    {
+      "id": 355,
+      "title": "Bill No. 355 - SEAL Act of 2025",
+      "filename": "Bill-No.-355-MP-Naguib-G.-Sinarimbo-SEAL-Act-of-2025.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/04/Bill-No.-355-MP-Naguib-G.-Sinarimbo-SEAL-Act-of-2025.pdf",
+      "description": "The SEAL Act of 2025.",
+      "date": "2025-04-01"
+    },
+    {
+      "id": 396,
+      "title": "Bill No. 396 - MP Baintan A. Ampatuan",
+      "filename": "Bill-No.-396-MP-Baintan-A.-Ampatuan.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/09/Bill-No.-396-MP-Baintan-A.-Ampatuan.pdf",
+      "description": "Legislative measure filed by MP Baintan A. Ampatuan.",
+      "date": "2025-09-01"
+    },
+    {
+      "id": 410,
+      "title": "Bill No. 410 - Bangsamoro Education Program (BEP)",
+      "filename": "Bill-No.-410-Government-of-the-Dday-BEP.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-410-Government-of-the-Dday-BEP.pdf",
+      "description": "An Act establishing the Bangsamoro Education Program (BEP).",
+      "date": "2025-11-01"
+    },
+    {
+      "id": 415,
+      "title": "Bill No. 415 - MP Naguib G. Sinarimbo",
+      "filename": "Bill-No.-415-MP-Naguib-G.-Sinarimbo.pdf",
+      "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/11/Bill-No.-415-MP-Naguib-G.-Sinarimbo.pdf",
+      "description": "Legislative measure filed by MP Naguib G. Sinarimbo.",
+      "date": "2025-11-01"
     },
     {
       "id": 419,
       "title": "Bill No. 419 - Amending the Bangsamoro Electoral Code",
       "filename": "Bill-No.-419-MP-ISHAK-V.-MASTURA.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2025/12/Bill-No.-419-MP-ISHAK-V.-MASTURA.pdf",
-      "description": "An Act amending Bangsamoro Autonomy Act No. 35 (Bangsamoro Electoral Code), lowering the electoral threshold to 2%, requiring 20% women nominees, and revising sectoral representation processes.",
+      "description": "An Act amending Bangsamoro Autonomy Act No. 35 (Bangsamoro Electoral Code).",
       "date": "2025-12-01"
     },
     {
@@ -77,7 +381,7 @@
       "title": "Bill No. 470 - Supplemental Funds for Bangsamoro Government",
       "filename": "Bill-No.-470-MP-Kitem-D.-Kadatuan-2.pdf",
       "url": "https://parliament.bangsamoro.gov.ph/wp-content/uploads/2026/05/Bill-No.-470-MP-Kitem-D.-Kadatuan-2.pdf",
-      "description": "An Act appropriating supplemental funds from unutilized prior years' appropriations for the operation of the Bangsamoro Government.",
+      "description": "An Act appropriating supplemental funds from unutilized prior years' appropriations.",
       "date": "2026-05-31"
     }
   ]
