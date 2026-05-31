@@ -194,30 +194,40 @@
             font-family: 'Montserrat', sans-serif;
         }
         .search-box:focus { outline: none; border-color: #c41e3a; }
-        .search-button {
-            width: 100%;
-            background: linear-gradient(135deg, #2d8c2d 0%, #1a5f1a 100%);
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 12px;
-            font-size: 16px;
-            font-weight: 600;
-            cursor: pointer;
+        
+        /* Button Container for horizontal layout */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
         }
-        .search-button i { margin-right: 8px; }
-        .update-button {
-            width: 100%;
-            background: #c41e3a;
-            color: white;
-            border: none;
+        .button-group button {
+            flex: 1;
             padding: 12px;
             border-radius: 12px;
             font-size: 14px;
+            font-weight: 600;
             cursor: pointer;
-            margin-top: 10px;
+            border: none;
+            transition: transform 0.2s;
         }
-        .update-button i { margin-right: 6px; }
+        .button-group button:hover {
+            transform: translateY(-2px);
+        }
+        .search-button {
+            background: linear-gradient(135deg, #2d8c2d 0%, #1a5f1a 100%);
+            color: white;
+        }
+        .viewall-button {
+            background: linear-gradient(135deg, #ffd700 0%, #ffaa00 100%);
+            color: #1a5f1a;
+        }
+        .update-button {
+            background: #c41e3a;
+            color: white;
+            margin-top: 0;
+        }
+        .search-button i, .viewall-button i, .update-button i { margin-right: 6px; }
         
         .bta-link-container {
             text-align: center;
@@ -462,6 +472,8 @@
             .header-title { font-size: 22px; }
             .header-logo img { width: 55px; height: 55px; }
             .bismillah-text { font-size: 32px; }
+            .button-group { flex-direction: column; gap: 8px; }
+            .button-group button { padding: 10px; }
         }
     </style>
 </head>
@@ -490,8 +502,14 @@
 
         <div class="search-card">
             <input type="text" id="searchInput" class="search-box" placeholder="Search bills by title, number, or description...">
-            <button class="search-button" onclick="searchPDFs()"><i class="fas fa-search"></i> Search Library</button>
-            <button class="update-button" onclick="forceRefreshFromCloud()"><i class="fas fa-sync-alt"></i> Refresh from Server</button>
+            
+            <!-- Button Group with 3 buttons side by side -->
+            <div class="button-group">
+                <button class="search-button" onclick="searchPDFs()"><i class="fas fa-search"></i> Search Library</button>
+                <button class="viewall-button" onclick="viewAllBills()"><i class="fas fa-list"></i> View All Approved Bills</button>
+                <button class="update-button" onclick="forceRefreshFromCloud()"><i class="fas fa-sync-alt"></i> Refresh</button>
+            </div>
+            
             <div class="bta-link-container">
                 <span class="bta-link" onclick="openBTAWebsite()">
                     <i class="fas fa-globe"></i> Visit Official BTA Parliament Website →
@@ -614,6 +632,24 @@
             }
         }
 
+        // NEW FUNCTION: View All Bills - displays all PDFs without any search filter
+        async function viewAllBills() {
+            currentSearch = '';
+            document.getElementById('searchInput').value = '';
+            if (!pdfDatabase.length) await fetchOfficialPDFList();
+            const container = document.getElementById('mainContentArea');
+            document.getElementById('resultsCount').innerHTML = `<i class="fas fa-file-pdf"></i> All Approved Bills (${pdfDatabase.length} documents)`;
+            if (!pdfDatabase.length) { 
+                container.innerHTML = `<div class="empty-state"><i class="fas fa-folder-open"></i><h3>No Bills Available</h3><button onclick="forceRefreshFromCloud()" style="margin-top:12px; background:#2d8c2d; color:white; border:none; padding:6px 16px; border-radius:20px;">Refresh</button></div>`; 
+                return; 
+            }
+            let html = `<div class="results-count"><i class="fas fa-file-pdf"></i> All Approved Bills (${pdfDatabase.length} documents)</div>`;
+            pdfDatabase.forEach(pdf => { 
+                html += `<div class="pdf-card" onclick='openPDFWithJS("${escapeJsString(pdf.url)}", "${escapeJsString(pdf.title)}")'><div class="pdf-title">${highlightText(pdf.title, '')}</div><div class="pdf-meta"><i class="fas fa-calendar-alt"></i> ${pdf.date || 'Recent'}</div><div class="pdf-desc">${escapeHtml(pdf.description || 'BTA Parliament Bill')}</div></div>`; 
+            });
+            container.innerHTML = html;
+        }
+
         async function searchPDFs() {
             currentSearch = document.getElementById('searchInput').value;
             if (!currentSearch.trim()) { await fetchAndDisplayTimeline(); document.getElementById('resultsCount').innerHTML = `<i class="fas fa-file-pdf"></i> `; return; }
@@ -687,6 +723,7 @@
         window.resetZoom = resetZoom; window.fitToWidth = fitToWidth; window.downloadCurrentPDF = downloadCurrentPDF;
         window.closePDF = closePDF; window.searchPDFs = searchPDFs; window.forceRefreshFromCloud = forceRefreshFromCloud;
         window.openBTAWebsite = openBTAWebsite; window.clearSearchAndReload = clearSearchAndReload; window.toggleExtraControls = toggleExtraControls;
+        window.viewAllBills = viewAllBills;
         
         async function initialize() {
             showBismillahLoading();
